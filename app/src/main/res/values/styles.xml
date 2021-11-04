@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Typography -->
+
+    <style name="title">
+        <item name="fontFamily">@font/radwave_font</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="card_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="featured_title">
+        <item name="fontFamily">@font/radwave_font</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="featured_label">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="feature_title">
+        <item name="fontFamily">@font/radwave_font</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="recipe_title">
+        <item name="android:textSize">16sp</item>
+        <item name="lineHeight">20sp</item>
+        <item name="fontWeight">800</item> <!-- does not work... -->
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="recipe">
+        <item name="android:textSize">16sp</item>
+        <item name="lineHeight">20sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!-- Shapes -->
+
+    <style name="card">
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+</resources>

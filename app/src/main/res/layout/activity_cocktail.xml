@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CocktailActivity">
+
+        <ImageView
+            android:id="@+id/cocktail_image"
+            android:layout_width="wrap_content"
+            android:layout_height="720dp"
+            android:contentDescription="A Cocktail in a champagne flute"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cb_cocktail_big" />
+
+        <ImageButton
+            android:id="@+id/cocktail_fav_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/cocktail_label"
+            app:layout_constraintStart_toStartOf="@+id/cocktail_label"
+            app:srcCompat="@drawable/heart_base"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/cocktail_label"
+            style="@style/card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/featured_cocktail_label"
+            app:layout_constraintBottom_toTopOf="@+id/cocktail_title"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/cocktail_title"
+            style="@style/feature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="100dp"
+            android:text="@string/featured_cocktail_name"
+            app:layout_constraintBottom_toBottomOf="@+id/cocktail_image"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/cocktail_recipe_title"
+            style="@style/recipe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="@string/cocktail_recipe_title"
+            app:layout_constraintStart_toStartOf="@+id/cocktail_title"
+            app:layout_constraintTop_toBottomOf="@+id/cocktail_title" />
+
+        <TextView
+            android:id="@+id/cocktail_recipe_step1"
+            style="@style/recipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/cocktail_recipe_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cocktail_recipe_title"
+            app:layout_constraintTop_toBottomOf="@+id/cocktail_recipe_title" />
+
+        <TextView
+            android:id="@+id/cocktail_recipe_step2"
+            style="@style/recipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cocktail_recipe_2"
+            app:layout_constraintEnd_toEndOf="@+id/cocktail_recipe_step1"
+            app:layout_constraintStart_toStartOf="@+id/cocktail_recipe_step1"
+            app:layout_constraintTop_toBottomOf="@+id/cocktail_recipe_step1" />
+
+        <TextView
+            android:id="@+id/cocktail_recipe_step3"
+            style="@style/recipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cocktail_recipe_3"
+            app:layout_constraintEnd_toEndOf="@+id/cocktail_recipe_step2"
+            app:layout_constraintStart_toStartOf="@+id/cocktail_recipe_step2"
+            app:layout_constraintTop_toBottomOf="@+id/cocktail_recipe_step2" />
+
+        <TextView
+            android:id="@+id/cocktail_recipe_step4"
+            style="@style/recipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/cocktail_recipe_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cocktail_recipe_step3"
+            app:layout_constraintStart_toStartOf="@+id/cocktail_recipe_step3"
+            app:layout_constraintTop_toBottomOf="@+id/cocktail_recipe_step3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

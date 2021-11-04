@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MGE Crown Bar</string>
+    <string name="events">Events</string>
+    <string name="featured_cocktail_name">Dark Mojito</string>
+    <string name="featured_mocktail_name">Happy Driver</string>
+    <string name="featured_cocktail_label">FEATURED COCKTAIL:</string>
+    <string name="featured_mocktail_label">FEATURED MOCKTAIL:</string>
+    <string name="title_activity_events">Events</string>
+    <string name="event_text_1">%1$s - %2$s</string>
+    <string name="event_text_2">%1$s - %2$s</string>
+    <string name="event_text_3">%1$s - %2$s</string>
+
+    <!-- Featured recipes -->
+    <string name="mocktail_recipe_title"><b>Rezept</b></string>
+    <string name="mocktail_recipe_1">10cl Orangensaft in ein Rührglas füllen</string>
+    <string name="mocktail_recipe_2">6cl Pfirsichnektar und 1cl frischer Zitronensaft dazu geben</string>
+    <string name="mocktail_recipe_3">Glas mit Eis füllen und 30 Sekunden gut umrühren</string>
+    <string name="mocktail_recipe_4">In eine Champagner-Flöte geben, mit einem Minzzweig dekorieren</string>
+
+    <string name="cocktail_recipe_title"><b>Rezept</b></string>
+    <string name="cocktail_recipe_1">1/2 Blutorange vierteln und zusammen mit einer Feige und 2 Löffel Zucker im Glas leicht zerdrücken></string>
+    <string name="cocktail_recipe_2">5cl heller Rum beigeben</string>
+    <string name="cocktail_recipe_3">Ein Dash Soda darüber geben</string>
+    <string name="cocktail_recipe_4">Dekorieren mit Feige / Orange und einem Minzzweig</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="insta_profile_name">\@thecrownbar</string>
+    <string name="insta_hashtag_name">#RoyalRappi</string>
+    <string name="website_title">Website</string>
+    <string name="website_url">thecrownbar.ch</string>
+</resources>

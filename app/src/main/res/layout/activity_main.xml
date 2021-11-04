@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/events_container"
+        style="@style/card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/events_title"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/events"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/events_event_1"
+            style="@style/card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/event_text_1"
+            app:layout_constraintStart_toStartOf="@+id/events_title"
+            app:layout_constraintTop_toBottomOf="@+id/events_title" />
+
+        <TextView
+            android:id="@+id/events_event_2"
+            style="@style/card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/event_text_2"
+            app:layout_constraintStart_toStartOf="@+id/events_title"
+            app:layout_constraintTop_toBottomOf="@+id/events_event_1" />
+
+        <TextView
+            android:id="@+id/events_event_3"
+            style="@style/card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/event_text_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/events_title"
+            app:layout_constraintTop_toBottomOf="@+id/events_event_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/featured_cocktail_container"
+        style="@style/card"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/cb_cocktail"
+        app:layout_constraintEnd_toStartOf="@+id/featured_mocktail_container"
+        app:layout_constraintStart_toStartOf="@+id/events_container"
+        app:layout_constraintTop_toBottomOf="@+id/events_container">
+
+        <TextView
+            android:id="@+id/featured_cocktail_label"
+            style="@style/featured_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/featured_cocktail_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/featured_cocktail_title"
+            style="@style/featured_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/featured_cocktail_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/featured_mocktail_container"
+        style="@style/card"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/cb_mocktail"
+        app:layout_constraintEnd_toEndOf="@+id/events_container"
+        app:layout_constraintStart_toEndOf="@+id/featured_cocktail_container"
+        app:layout_constraintTop_toTopOf="@+id/featured_cocktail_container">
+
+        <TextView
+            android:id="@+id/featured_mocktail_label"
+            style="@style/featured_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/featured_mocktail_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/featured_mocktail_title"
+            style="@style/featured_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/featured_mocktail_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/map_view"
+        android:layout_width="0dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cb_cocktail"
+        android:contentDescription="A black and white map"
+        app:layout_constraintEnd_toEndOf="@+id/featured_cocktail_container"
+        app:layout_constraintStart_toStartOf="@+id/featured_cocktail_container"
+        app:layout_constraintTop_toBottomOf="@+id/featured_cocktail_container"
+        app:srcCompat="@drawable/cb_map" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/insta_view"
+        style="@style/card"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_view"
+        app:layout_constraintEnd_toEndOf="@+id/featured_mocktail_container"
+        app:layout_constraintStart_toStartOf="@+id/featured_mocktail_container"
+        app:layout_constraintTop_toTopOf="@+id/map_view">
+
+        <ImageView
+            android:id="@+id/insta_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Instagram Logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_insta_logo" />
+
+        <TextView
+            android:id="@+id/insta_profile"
+            style="@style/card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insta_profile_name"
+            app:layout_constraintBottom_toTopOf="@+id/insta_hashtag"
+            app:layout_constraintStart_toStartOf="@+id/insta_logo" />
+
+        <TextView
+            android:id="@+id/insta_hashtag"
+            style="@style/card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/insta_hashtag_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/insta_logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/website_container"
+        style="@style/card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/insta_view"
+        app:layout_constraintStart_toStartOf="@+id/map_view"
+        app:layout_constraintTop_toBottomOf="@+id/map_view"
+        android:background="@drawable/rounded_corners"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/website_title"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/website_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/website_url"
+            style="@style/card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/website_url"
+            app:layout_constraintBaseline_toBaselineOf="@+id/website_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
